@@ -1,0 +1,21 @@
+view_w = view_get_wport(0);
+view_h = view_get_hport(0);
+
+cam_zoom = 1;
+cam_w = view_w*cam_zoom;
+cam_h = view_h*cam_zoom;
+
+
+cam = camera_create_view(x, y, cam_w, cam_h);
+view_set_camera(0, cam);
+
+
+cam_x = x;
+cam_y = y;
+cam_lerp = 0.25;
+
+
+zoom_target = cam_zoom;
+zoom_inc = 0.15;
+zoom_min = 0.5;
+zoom_max = 4;
