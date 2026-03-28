@@ -21,6 +21,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"FMOD","order":1,"path":"extensions/FMOD/FMOD.yy",},
+    {"name":"ARMATURE_OBJ","order":4,"path":"objects/ARMATURE_OBJ/ARMATURE_OBJ.yy",},
     {"name":"o_Cam","order":2,"path":"objects/o_Cam/o_Cam.yy",},
     {"name":"o_Fmod_Controler","order":1,"path":"objects/o_Fmod_Controler/o_Fmod_Controler.yy",},
     {"name":"o_Human","order":3,"path":"objects/o_Human/o_Human.yy",},

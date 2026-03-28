@@ -1,5 +1,6 @@
-view_w = view_get_wport(0);
-view_h = view_get_hport(0);
+var _cam = view_camera[0];
+view_w = camera_get_view_width(_cam);
+view_h = camera_get_view_height(_cam);
 
 cam_zoom = 1;
 cam_w = view_w*cam_zoom;

@@ -1,15 +1,14 @@
-var m_scroll = mouse_wheel_up()-mouse_wheel_down();
+var m_scroll = mouse_wheel_down()-mouse_wheel_up();
 zoom_target += zoom_inc*m_scroll;
 zoom_target = clamp(zoom_target, zoom_min, zoom_max);
 
-if ( abs(zoom_target-cam_zoom) > 0.1 )
+if ( abs(zoom_target-cam_zoom) > 0.001 )
 {
     cam_zoom = lerp(cam_zoom, zoom_target, cam_lerp);
     cam_w = view_w*cam_zoom;
     cam_h = view_h*cam_zoom;
     camera_set_view_size(cam, cam_w, cam_h);
 }
-
 
 cam_x = lerp(cam_x, x, cam_lerp);
 cam_y = lerp(cam_y, y, cam_lerp);

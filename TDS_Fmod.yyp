@@ -38,7 +38,9 @@
   },
   "name":"TDS_Fmod",
   "resources":[
+    {"id":{"name":"crv_armature_lerps","path":"animcurves/crv_armature_lerps/crv_armature_lerps.yy",},},
     {"id":{"name":"FMOD","path":"extensions/FMOD/FMOD.yy",},},
+    {"id":{"name":"ARMATURE_OBJ","path":"objects/ARMATURE_OBJ/ARMATURE_OBJ.yy",},},
     {"id":{"name":"o_Cam","path":"objects/o_Cam/o_Cam.yy",},},
     {"id":{"name":"o_Fmod_Controler","path":"objects/o_Fmod_Controler/o_Fmod_Controler.yy",},},
     {"id":{"name":"o_Human","path":"objects/o_Human/o_Human.yy",},},
