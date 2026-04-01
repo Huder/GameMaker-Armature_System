@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"o_Cam",
+  "%Name":"old_o_Cam",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_Cam",
+  "name":"old_o_Cam",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Backup",
+    "path":"folders/Objects/Backup.yy",
   },
   "parentObjectId":null,
   "persistent":false,

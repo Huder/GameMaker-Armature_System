@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_Armature_system",
+  "%Name":"old_scr_Game_Init",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_Armature_system",
+  "name":"old_scr_Game_Init",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Backup",
+    "path":"folders/Scripts/Backup.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

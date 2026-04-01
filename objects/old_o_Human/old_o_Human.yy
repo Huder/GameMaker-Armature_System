@@ -1,20 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"o_Human",
+  "%Name":"old_o_Human",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_Human",
+  "name":"old_o_Human",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Backup",
+    "path":"folders/Objects/Backup.yy",
   },
   "parentObjectId":{
-    "name":"ARMATURE_OBJ",
-    "path":"objects/ARMATURE_OBJ/ARMATURE_OBJ.yy",
+    "name":"old_ARMATURE_OBJ",
+    "path":"objects/old_ARMATURE_OBJ/old_ARMATURE_OBJ.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

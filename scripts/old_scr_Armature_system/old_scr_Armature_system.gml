@@ -1,7 +1,7 @@
-enum CRV_ARM {linear, linear_smooth, fast_in, fast_out}
+enum old_CRV_ARM {linear, linear_smooth, fast_in, fast_out}
 
 /// @desc Create armature system
-function armature_system(LerpIndex=CRV_ARM.linear_smooth) constructor
+function old_armature_system(LerpIndex=old_CRV_ARM.linear_smooth) constructor
 {
     par = other;
     parID = par.id;
@@ -26,7 +26,7 @@ function armature_system(LerpIndex=CRV_ARM.linear_smooth) constructor
     
     /// @desc Dodaje nową kość do armatury i zwraca utworzony struct
     /// @param {Asset.GMSprite} Spr         Sprite lub undefined
-    /// @param {Struct.armature_bone} ParentBone Kość rodzica
+    /// @param {Struct.old_armature_bone} ParentBone Kość rodzica
     /// @param {String}        BoneName    Nazwa kości
     /// @param {Real}          StartX      X startu (lokalnie)
     /// @param {Real}          StartY      Y startu (lokalnie)
@@ -37,7 +37,7 @@ function armature_system(LerpIndex=CRV_ARM.linear_smooth) constructor
     /// @param {Real}          DrawPriority Priorytet rysowania (wyższy = wyżej)
     function add_bone(Spr=undefined, ParentBone=-1, BoneName="default", StartX=0, StartY=0, EndX=0, EndY=0, SprScaleX=1, SprScaleY=1, DrawPriority=0)
     {
-        var bone = new armature_bone(Spr, ParentBone, BoneName, StartX, StartY, EndX, EndY, self, SprScaleX, SprScaleY, DrawPriority);
+        var bone = new old_armature_bone(Spr, ParentBone, BoneName, StartX, StartY, EndX, EndY, self, SprScaleX, SprScaleY, DrawPriority);
         array_push(bones, bone);
         recalculate_draw_order();
         return bone;
@@ -80,17 +80,17 @@ function armature_system(LerpIndex=CRV_ARM.linear_smooth) constructor
 
 /// @desc Create armature bone
 /// @param {Asset.GMSprite} Spr         Sprite lub undefined
-/// @param {Struct.armature_bone} ParentBone Kość rodzica
+/// @param {Struct.old_armature_bone} ParentBone Kość rodzica
 /// @param {String}        BoneName    Nazwa kości
 /// @param {Real}          StartX      X startu (lokalnie)
 /// @param {Real}          StartY      Y startu (lokalnie)
 /// @param {Real}          EndX        X końca (lokalnie)
 /// @param {Real}          EndY        Y końca (lokalnie)
-/// @param {Struct.armature_system} System System armatury
+/// @param {Struct.old_armature_system} System System armatury
 /// @param {Real}          SprScaleX   Lokalna skala sprita X
 /// @param {Real}          SprScaleY   Lokalna skala sprita Y
 /// @param {Real}          Priority    Priorytet rysowania (wyższy = wyżej)
-function armature_bone(Spr=undefined, ParentBone=-1, BoneName="default", StartX=0, StartY=0, EndX=0, EndY=0, System=-1, SprScaleX=1, SprScaleY=1, Priority=0) constructor
+function old_armature_bone(Spr=undefined, ParentBone=-1, BoneName="default", StartX=0, StartY=0, EndX=0, EndY=0, System=-1, SprScaleX=1, SprScaleY=1, Priority=0) constructor
 {
     par_sys = System;
     par_bone = ParentBone;

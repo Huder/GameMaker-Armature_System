@@ -4,7 +4,7 @@ image_angle = 0; // przywracamy na zero bo nie chemy maski obracac
 
 
 // init systemu armatur
-armature = new armature_system();
+armature = new old_armature_system();
 
 debug_draw_armature = true;
 if ( EnableDebugView )
