@@ -20,6 +20,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"ARMATURE_BONE","order":4,"path":"objects/ARMATURE_BONE/ARMATURE_BONE.yy",},
     {"name":"o_Cam","order":3,"path":"objects/o_Cam/o_Cam.yy",},
     {"name":"o_Player","order":2,"path":"objects/o_Player/o_Player.yy",},
     {"name":"old_o_Cam","order":1,"path":"objects/old_o_Cam/old_o_Cam.yy",},

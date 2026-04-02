@@ -40,6 +40,7 @@
   "name":"Armature_System",
   "resources":[
     {"id":{"name":"crv_armature_lerps","path":"animcurves/crv_armature_lerps/crv_armature_lerps.yy",},},
+    {"id":{"name":"ARMATURE_BONE","path":"objects/ARMATURE_BONE/ARMATURE_BONE.yy",},},
     {"id":{"name":"o_Cam","path":"objects/o_Cam/o_Cam.yy",},},
     {"id":{"name":"o_Init","path":"objects/o_Init/o_Init.yy",},},
     {"id":{"name":"o_Player","path":"objects/o_Player/o_Player.yy",},},
