@@ -7,7 +7,7 @@ rot_spd = 9;
 
 // Inicjujemy armaturę w domyślnej pozie T-Pose
 armature = new armature_Sys(rot);
-armature.Add_Bone(spr_Human_Backpack, -1,   "Torso", "",        0, 0, 1,  0, 1, 1, 2);
+armature.Add_Bone(spr_Human_Backpack, -1,   "Torso", "",        0, 0, 1,  0, 1, 1, 0);
 armature.Add_Bone(spr_Human_head, -1,       "Head",  "Torso",   0, 0, 26, 0, 1, 1, 1);
 
 

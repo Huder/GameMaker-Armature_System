@@ -17,8 +17,11 @@ function armature_Sys(Rot) constructor
         for ( var i = 0; i < b_num; i++ )
         {
             var bone = bones[i];
-            var priority = bone.bone_drawPriority;
-            bone.bone_depth = root_depth; // TODO
+            if ( !instance_exists(bone) ) continue;
+            
+            var layer_val = bone.bone_drawLayer;
+            // DrawLayer: 0 = root_depth, 1 = nad (-1 depth), -1 = pod (+1 depth).
+            bone.bone_depth = -layer_val-i;
         }
     }
     
@@ -47,8 +50,8 @@ function armature_Sys(Rot) constructor
     /// @param {Real}                   EndY            Y końca (lokalne)
     /// @param {Real}                   SprScaleX       Lokalna skala sprita X
     /// @param {Real}                   SprScaleY       Lokalna skala sprita Y
-    /// @param {Real}                   DrawPriority    Priorytet rysowania 
-    function Add_Bone(Spr=-1, Mask=-1, BoneName="default", BoneParentName="", StartX=0, StartY=0, EndX=32, EndY=0, SprScaleX=1, SprScaleY=1, DrawPriority=0)
+    /// @param {Real}                   DrawLayer       Warstwa rysowania kości ( warstwa 0=system.root_depth )
+    function Add_Bone(Spr=-1, Mask=-1, BoneName="default", BoneParentName="", StartX=0, StartY=0, EndX=32, EndY=0, SprScaleX=1, SprScaleY=1, DrawLayer=0)
     {
         
         var ind = instance_create_depth(root_x, root_y, root_depth-1, ARMATURE_BONE, { 
@@ -57,7 +60,7 @@ function armature_Sys(Rot) constructor
                 parent_system : other,
                 system_instance : root_instance,
                 bone_name : BoneName,
-                bone_drawPriority: DrawPriority
+                bone_drawLayer : DrawLayer
             });
         
         if ( BoneParentName != "" && BoneParentName != BoneName )
@@ -79,7 +82,6 @@ function armature_Sys(Rot) constructor
         	ind.parent_bone = undefined;
         }
         
-        show_message(ind.parent_bone)
         
         array_push(bones, ind);
         __recalculate_draw_order();

@@ -12,4 +12,3 @@ if ( !keyboard_check(vk_control) )
     
     armature.Set_Rotation(rot);
 }
-
