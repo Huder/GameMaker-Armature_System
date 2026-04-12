@@ -38,11 +38,13 @@
   "name":"Armature_System",
   "resources":[
     {"id":{"name":"crv_armature_lerps","path":"animcurves/crv_armature_lerps/crv_armature_lerps.yy",},},
+    {"id":{"name":"ARMATURE_BONE","path":"objects/ARMATURE_BONE/ARMATURE_BONE.yy",},},
     {"id":{"name":"o_Cam","path":"objects/o_Cam/o_Cam.yy",},},
     {"id":{"name":"o_Init","path":"objects/o_Init/o_Init.yy",},},
     {"id":{"name":"o_Player","path":"objects/o_Player/o_Player.yy",},},
     {"id":{"name":"rm_Game","path":"rooms/rm_Game/rm_Game.yy",},},
     {"id":{"name":"rm_Init","path":"rooms/rm_Init/rm_Init.yy",},},
+    {"id":{"name":"scr_Armature_system","path":"scripts/scr_Armature_system/scr_Armature_system.yy",},},
     {"id":{"name":"scr_Game_Init","path":"scripts/scr_Game_Init/scr_Game_Init.yy",},},
     {"id":{"name":"spr_Human_arm_R_bottom","path":"sprites/spr_Human_arm_R_bottom/spr_Human_arm_R_bottom.yy",},},
     {"id":{"name":"spr_Human_arm_R_top","path":"sprites/spr_Human_arm_R_top/spr_Human_arm_R_top.yy",},},
