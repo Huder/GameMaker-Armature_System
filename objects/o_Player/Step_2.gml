@@ -1,4 +1,6 @@
 
+armature.Update();
+
 // Debug
 var p_Pos = $"   Position: [{x}, {y}]\n"+
             $"   Rotation: {rot} deg";

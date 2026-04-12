@@ -10,3 +10,7 @@ if ( !keyboard_check(vk_control) )
         rot += min(absAngle, rot_spd)*sign(toMouseAngle);
     }
 }
+
+var root = armature.Get_rootBone();
+var _rot = rot;
+with ( root ) armature_bone_set_rotation_local(_rot);

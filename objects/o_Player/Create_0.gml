@@ -5,7 +5,8 @@ rot = image_angle;
 image_angle = 0; // resetujemy bo nie chcemy obracać maski kolizji
 rot_spd = 9;
 
-armature = undefined;
+armature = new Armature("Torso", x, y, 0, 1, spr_Human_Backpack);
+armature.Add_bone("Head", "Torso", 0, 0, 27, 0, 1, spr_Human_head);
 
 // Debug view stuff
 debug_watch = "";
